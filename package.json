@@ -1,0 +1,27 @@
+{
+  "name": "tradfri-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "lint": "eslint"
+  },
+  "author": "Jasper Fung <contact@jasperfung.co>",
+  "license": "MIT",
+  "dependencies": {
+    "8": "0.0.1",
+    "color-temperature": "^0.2.7",
+    "dotenv": "^4.0.0",
+    "node-tradfri": "^0.2.2",
+    "node-tradfri-client": "^0.5.3",
+    "rgb-hex": "^2.1.0",
+    "suncalc": "^1.8.0",
+    "tinygradient": "^0.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.13.1",
+    "eslint-config-google": "^0.9.1"
+  }
+}
