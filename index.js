@@ -6,6 +6,9 @@ const SunCalc = require('suncalc');
 const hostname = process.env.HOSTNAME;
 const identity = process.env.IDENTITY;
 const key = process.env.KEY;
+// sunset config
+const latitude = process.env.LATITUDE;
+const longitude = process.env.LONGITUDE;
 
 // create client that can authenticate with gateway
 const {TradfriClient, AccessoryTypes} = tradfriLib;
@@ -30,8 +33,7 @@ const bindLights = async () => {
 };
 
 // get sun's stage in the day (sunset, sunrise, dusk, dawn, etc.)
-const latitude = 45.523062;
-const longitude = -122.676482;
+// latitude and longitude fetched from env
 const getFluxStage = async () => {
   const now = new Date();
   // calculate sun event times
