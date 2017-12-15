@@ -72,9 +72,9 @@ const temps = {
   sunrise: 0,
   sunriseEnd: 0,
   goldenHourEnd: 0,
-  solarNoon: 0,
-  goldenHour: 0,
-  sunsetStart: 0,
+  solarNoon: 10,
+  goldenHour: 10,
+  sunsetStart: 25,
   sunset: 50,
   dusk: 50,
   nauticalDusk: 50,
@@ -97,7 +97,7 @@ const flux = async () => {
     bulbKeys.map((bulbKey) => {
       console.log(`setting bulb ${bulbKey} to ${lightTemp}% warmth`);
       // gentle change in temperture so it's less noticiable
-      const transitionTime = 30;
+      const transitionTime = 60;
       tradfri.operateLight(lightbulbs[bulbKey], {
         transitionTime,
         colorTemperature: lightTemp,
