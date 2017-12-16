@@ -1,5 +1,5 @@
 # trådfri-flux
-Make your IKEA Trådfri bulbs 💡 change temperature like [f.lux ☀️](https://justgetflux.com).   
+Make your IKEA Trådfri bulbs change temperature like [f.lux](https://justgetflux.com).   
 
 ![ikea trådfri bulbs, dimmer, gateway, and an iphone running the trådfri app on wooden blocks](http://www.ikea.com/ms/sv_SE/img/fy17/belysning/smart-belysning/ikea_smart_belysning_1620x841.gif)
 ## Installation
