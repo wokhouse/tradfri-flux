@@ -14,6 +14,6 @@ Make your IKEA Trådfri bulbs 💡 change temperature like [f.lux ☀️](https:
 ## Running on a Raspberry Pi
 If you have a Raspberry Pi, setting up trådfri-flux is a cinch and can run on startup.
 1. Perform the installation
-2. In trådfri-flux's directory, run `sudo cp .env /.env` to copy the .env var to your root folder
-3. If trådfri-flux is located in `/home/pi/tradfri-flux`, run `echo 'node /home/pi/tradfri-flux/index.js &' >> /etc/rc.local` to add trådfri-flux to startup.
+2. In tradfri-flux's directory, run `sudo cp .env /.env` to copy the .env var to your root folder
+3. If tradfri-flux is located in `/home/pi/tradfri-flux`, run `echo 'node /home/pi/tradfri-flux/index.js &' >> /etc/rc.local` to add trådfri-flux to startup.
 4. Reboot your pi with `sudo reboot`
