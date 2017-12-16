@@ -53,7 +53,9 @@ const getFluxStage = async () => {
     return a.time - b.time;
   });
   let prev = NaN;
-  let sunStage = NaN;
+  // default is night
+  // if it's earlier than night, asMillis.some will change it
+  let sunStage = {stage: 'night'};
   // only test vals until we find one that is later than right now
   asMillis.some((e) => {
     if ((e.time < Date.now()) == false) {
