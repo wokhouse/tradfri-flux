@@ -7,7 +7,7 @@ Make your IKEA Trådfri bulbs change temperature like [f.lux](https://justgetflu
 2. Obtain your longitude and latitude (used for sunrise/sunset times). [NASA has a tool for this.](https://mynasadata.larc.nasa.gov/latitudelongitude-finder/)
 3. Clone tradfri-flux `git clone https://github.com/overwatchcorp/tradfri-flux.git`
 5. Install npm dependencies `cd tradfri-flux && npm install`
-5. Run `node bin/setup.js --hostname 127.0.0.1 --key a1b2c3d4e5f6g7h8i9j0 --lat 12.345 --long 3.141` to prepare the .env file, where hostname is the IP address of the gateway, and key is the security key found on the bottom of the gateway.
+5. Run `node bin/setup.js --host 127.0.0.1 --key a1b2c3d4e5f6g7h8i9j0 --lat 12.345 --long 3.141` to prepare the .env file, where hostname is the IP address of the gateway, and key is the security key found on the bottom of the gateway.
    - If you have a negative longitude or latitude, enclose the value in quotes and add a space before the negative sign so it doesn't interpret it as another argument: `--long " -122.670"`
 6. Run `npm start` to start trådfri-flux
 
