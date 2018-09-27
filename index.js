@@ -33,8 +33,8 @@ const adjustLight = async (device) => {
 const lightbulbs = {};
 const tradfriDeviceUpdated = (device) => {
   if (device.type === AccessoryTypes.lightbulb) {
+    if(device.instanceId in lightbulbs == false) adjustLight(device);
     lightbulbs[device.instanceId] = device;
-    adjustLight(device);
   }
 };
 const tradfriDeviceRemoved = (instanceId) => {
@@ -49,3 +49,6 @@ const bindLights = async () => {
 };
 
 bindLights();
+setInterval(() => {
+  for(device in lightbulbs) adjustLight(lightbulbs[device]);
+}, 10000);
