@@ -2,7 +2,7 @@
   "name": "tradfri-test",
   "version": "1.0.0",
   "description": "",
-  "main": "new.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest --watch",
     "start": "node index.js",
