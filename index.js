@@ -24,7 +24,7 @@ const adjustLight = async (device) => {
   const warmth = getWarmth(stages, coords, now);
   console.log(warmth);
   return tradfri.operateLight(device, {
-      transitionTime: 10,
+      transitionTime: 1,
       colorTemperature: warmth,
   });
 };
