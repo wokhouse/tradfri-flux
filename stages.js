@@ -12,10 +12,6 @@ const stages = {
     },
     {
       toSunset: 1,
-      warmth: 80,
-    },
-    {
-      toSunset: 1.25,
       warmth: 100,
     },
   ],
