@@ -1,0 +1,19 @@
+{
+  "name": "tradfri-flux",
+  "version": "3.0.0",
+  "description": "f.lux-like adjustmenets to warmth on IKEA tradfri bulbs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://overwatchcorp@github.com/overwatchcorp/tradfri-flux.git"
+  },
+  "author": "fungj <fungj@reed.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/overwatchcorp/tradfri-flux/issues"
+  },
+  "homepage": "https://github.com/overwatchcorp/tradfri-flux#readme"
+}
